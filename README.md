@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI SDLC Management Platform — Backend
 
 **Status: Phase 0 (scaffolding) + Phase 1 (Authentication module) complete, pending your local build verification.**
@@ -91,3 +92,7 @@ src/main/resources/db/migration/   Flyway scripts (V1 schema, V2 seed roles)
 Tell me the results of the checklist above. If everything is green, we move to **Phase 2: User Management**
 (admin CRUD on users, deactivation, role assignment, profile/skills/department). If anything fails, send me
 the error and I'll patch it before we move forward — per your process, we don't skip ahead on a red build.
+=======
+# AI-Software-Development-Lifecycle-SDLC-Management-Platform
+**AI Software Development Lifecycle (SDLC) Management Platform** is an enterprise SaaS application for project management, task tracking, bug management, and AI-powered development automation, built with Java, Spring Boot, React.js, PostgreSQL, Docker, and JWT Authentication.
+>>>>>>> d3db0f2fcdcded120cc19683803ca2ea0f86032a
