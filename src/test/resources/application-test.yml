@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  mail:
+    host: localhost
+    port: 2525
+    username: test
+    password: test
+
+app:
+  jwt:
+    secret: test-secret-test-secret-test-secret-test-secret-32chars
+    access-token-expiration-ms: 900000
+    refresh-token-expiration-ms: 604800000
+  frontend:
+    base-url: http://localhost:5173
+  cors:
+    allowed-origins: http://localhost:5173
+  mail:
+    from: no-reply@sdlcplatform.com
+  ai:
+    provider: openai
