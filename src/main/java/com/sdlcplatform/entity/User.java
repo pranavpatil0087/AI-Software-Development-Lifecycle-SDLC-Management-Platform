@@ -40,6 +40,9 @@ public class User extends BaseEntity {
     @Column(length = 100)
     private String department;
 
+    @Column(name = "job_title", length = 150)
+    private String jobTitle;
+
     @Column(name = "is_active", nullable = false)
     @Builder.Default
     private boolean active = true;

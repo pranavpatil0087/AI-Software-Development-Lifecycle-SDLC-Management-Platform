@@ -15,11 +15,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.time.Instant;
 import java.util.List;
 
-/**
- * Central place where every exception thrown anywhere in the application
- * is translated into a consistent JSON error shape. Controllers and services
- * should throw domain exceptions and never build error responses themselves.
- */
 @RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
@@ -52,6 +47,11 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(AccountDeactivatedException.class)
     public ResponseEntity<ErrorResponse> handleDeactivated(AccountDeactivatedException ex, HttpServletRequest request) {
         return build(HttpStatus.FORBIDDEN, ex.getMessage(), request, null);
+    }
+
+    @ExceptionHandler(InvalidOperationException.class)
+    public ResponseEntity<ErrorResponse> handleInvalidOperation(InvalidOperationException ex, HttpServletRequest request) {
+        return build(HttpStatus.BAD_REQUEST, ex.getMessage(), request, null);
     }
 
     @ExceptionHandler(AccessDeniedException.class)

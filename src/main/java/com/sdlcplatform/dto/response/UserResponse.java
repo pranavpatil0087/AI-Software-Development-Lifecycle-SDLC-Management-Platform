@@ -20,6 +20,7 @@ public class UserResponse {
     private String email;
     private String fullName;
     private String department;
+    private String jobTitle;
     private boolean active;
     private boolean emailVerified;
     private Set<String> roles;
