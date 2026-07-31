@@ -11,6 +11,7 @@ import com.sdlcplatform.mapper.UserMapper;
 import com.sdlcplatform.repository.RoleRepository;
 import com.sdlcplatform.repository.UserRepository;
 import com.sdlcplatform.repository.UserSkillRepository;
+import com.sdlcplatform.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
